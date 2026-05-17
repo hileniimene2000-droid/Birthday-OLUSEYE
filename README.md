@@ -1,1 +1,111 @@
-# Birthday-OLUSEYE
+# Birthday-OLUSEYE<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Oluseye 🎂</title>
+
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #1a002a, #000010);
+  font-family: cursive;
+  color: white;
+}
+
+.message {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ff4fd8, 0 0 25px #7c4dff;
+  animation: glow 2s infinite alternate;
+}
+
+.submessage {
+  position: absolute;
+  top: 52%;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+}
+
+@keyframes glow {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+.balloon {
+  position: absolute;
+  bottom: -120px;
+  width: 40px;
+  height: 55px;
+  border-radius: 50%;
+  animation: floatUp 10s linear infinite;
+}
+
+.balloon::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background: white;
+  top: 55px;
+  left: 50%;
+}
+
+.b1 { left: 10%; background: #ff4d6d; }
+.b2 { left: 30%; background: #ffd166; }
+.b3 { left: 50%; background: #06d6a0; }
+.b4 { left: 70%; background: #4cc9f0; }
+.b5 { left: 85%; background: #b5179e; }
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+.spark {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: explode 2s infinite;
+}
+
+.s1 { top: 20%; left: 20%; background: #ff4d6d; }
+.s2 { top: 30%; left: 70%; background: #ffd166; }
+.s3 { top: 50%; left: 40%; background: #06d6a0; }
+.s4 { top: 25%; left: 55%; background: #4cc9f0; }
+.s5 { top: 40%; left: 80%; background: #b5179e; }
+
+@keyframes explode {
+  0% { transform: scale(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: scale(6); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="message">🎂 Happy Birthday Oluseye 🎆</div>
+<div class="submessage">That’s for being a good friend 💜</div>
+
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+<div class="balloon b5"></div>
+
+<div class="spark s1"></div>
+<div class="spark s2"></div>
+<div class="spark s3"></div>
+<div class="spark s4"></div>
+<div class="spark s5"></div>
+
+</body>
+</html>
